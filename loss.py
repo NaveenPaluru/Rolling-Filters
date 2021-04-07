@@ -70,7 +70,7 @@ def sobel_kernel():
 def total_loss(chi, y, b, d, m, b_mean, b_std, y_mean, y_std, sobel):    
     
     # chi = predicetd susc
-    # y   = cosmos susc
+    # y   = cosmos susc or teacher susc (QSMnet susc)
     # b   = phs
     # d   = dipole kernel
     # m   = mask
@@ -125,9 +125,7 @@ def total_loss(chi, y, b, d, m, b_mean, b_std, y_mean, y_std, sobel):
     
     
     def loss_gradient(b, b_hat, chi, y, sobel):
-        #difference1 = F.conv3d(b - b_hat,   sobel, padding=1)
-        #difference2 = F.conv3d(y - chi  ,   sobel, padding=1)
-        difference   = F.conv3d(y - chi  ,   sobel, padding=1)
+        difference   = F.conv3d(y - chi , sobel, padding=1)
         return torch.mean(torch.abs(difference))
     
     w1 = 0.5
