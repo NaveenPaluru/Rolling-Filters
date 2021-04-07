@@ -5,12 +5,13 @@ Created on Mon Dec 14 15:01:32 2020
 
 @author: cds
 
+This snippet taken from https://github.com/SNU-LIST/QSMnet
 
 """
 
 
 import torch
-from QSMnet import QSMnet
+from teacher import QSMnet
 import numpy as np
 
 def padding_data(input_field):
