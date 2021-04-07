@@ -20,10 +20,9 @@ import tqdm
 import torch.nn as nn
 from datetime import datetime
 from config import Config
-from QSMnetDataset import mydataloader
-from anam3D import AnamNet
-#from abalbneck import AnamNet
-from QSMnet import QSMnet
+from myDataset import mydataloader
+from student import EQSMnet
+from teacher import QSMnet
 import torch.optim as optim
 from torch.optim import lr_scheduler
 from loss import*
@@ -53,7 +52,7 @@ print('----------------------------------------------------------')
 # Create the object for the network
 
 if config.gpu == True:    
-    net = AnamNet().cuda(config.gpuid)
+    net = EQMnet().cuda(config.gpuid)
     par = torch.nn.DataParallel(net, device_ids=[0, 1])
     tchr= QSMnet()
     tchr.load_state_dict(torch.load(saveDir+"27Dec_0244pm_model/"+ "QSMnet_25_model.pth"))
@@ -61,8 +60,7 @@ if config.gpu == True:
         p.requires_grad = False
     tchr=tchr.cuda(config.gpuid).eval()
     par2 = torch.nn.DataParallel(tchr, device_ids=[0, 1])
-else:
-   net = AnamNet()
+
    
 # Define the optimizer
 optimizer = optim.Adam(net.parameters(),lr=0.005)
@@ -156,8 +154,7 @@ for j in range(config.epochs):
         # print(net.conv1_block[0].weight.grad.data)
         
         # Accumulate loss for current minibatch
-        runtrainloss += loss.item()
-        
+        runtrainloss += loss.item()        
         
         # update the parameters
         optimizer.step()       
@@ -224,7 +221,7 @@ for j in range(config.epochs):
     scheduler.step()    
     
     #save the model   
-    torch.save(net.state_dict(),os.path.join(directory,"Anam_" + str(j+1) +"_model.pth"))
+    torch.save(net.state_dict(),os.path.join(directory,"EQSMnet_" + str(j+1) +"_model.pth"))
             
 
 # Save the train stats
