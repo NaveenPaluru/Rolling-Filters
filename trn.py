@@ -52,7 +52,7 @@ print('----------------------------------------------------------')
 # Create the object for the network
 
 if config.gpu == True:    
-    net = EQMnet().cuda(config.gpuid)
+    net = EQSMnet().cuda(config.gpuid)
     par = torch.nn.DataParallel(net, device_ids=[0, 1])
     tchr= QSMnet()
     tchr.load_state_dict(torch.load(saveDir+"27Dec_0244pm_model/"+ "QSMnet_25_model.pth"))
