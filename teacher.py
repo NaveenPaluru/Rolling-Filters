@@ -9,7 +9,7 @@ Created on Thu Nov 19 17:25:46 2020
 
 import torch
 import torch.nn as nn
-from pthflops.ops import count_ops
+
 class QSMnet(nn.Module):
     
     def __init__(self):
@@ -181,8 +181,7 @@ class QSMnet(nn.Module):
         for s in p.size():
           nn=nn*s
         pp+=nn   
-      flps, _ = count_ops(net,torch.rand(1,1,64, 64, 64))
-      return pp,  (pp*32)/(8*1024*1024), flps
+      return pp,  (pp*32)/(8*1024*1024)
   
 def tic():
     # Homemade version of matlab tic and toc functions
@@ -200,13 +199,11 @@ def toc():
 
 if __name__ == "__main__":
     net=QSMnet()
-    #net = net.cuda()
+    net = net.cuda()
     tic()
-    xx = torch.rand(1,1,128,128,128)#.cuda()
+    xx = torch.rand(1,1,64,64,64).cuda()
     yy = net(xx)
     toc()
-    #net=QSMnet()
-    #xx = torch.rand(1,1,64,64,64)
     print("Input Shape : ", xx.shape)
     print("Output Shape: ", yy.shape)
     print("Params : ", net.getnumberofparams(net))
