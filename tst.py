@@ -20,14 +20,14 @@ import tqdm
 import torch.nn as nn
 from datetime import datetime
 from config import Config
-from QSMnetDataset import mydataloader
-#from anam3D import AnamNet
+from myDataset import mydataloader
+from student import EQSMnet
 import torch.optim as optim
 from torch.optim import lr_scheduler
 from loss import*
 from torch.utils.data import Dataset, DataLoader
 from utils import*
-from anam3D_perturb import AnamNet
+
 
 def tic():
     # Homemade version of matlab tic and toc functions
@@ -46,7 +46,7 @@ def toc():
 def test(directory):
     
     tic()
-    net = AnamNet()
+    net = EQSMnet()
     net.load_state_dict(torch.load(directory))  
     
     
@@ -71,9 +71,9 @@ def test(directory):
     y_std = torch.tensor(stats['out_std' ])  
     
     # directory to save the predictions
-    out_data = './Data/Testing Data/anam_minus_15/'
+    out_data = './Data/Testing Data/EQSMnet/'
     
-    dw = -15/100
+   
     for i,data in tqdm.tqdm(enumerate(testloader)):  
         
         # start iterations
@@ -89,10 +89,9 @@ def test(directory):
             phs  = phs.cuda(config.gpuid)
            
         # make forward pass      
-        output   = par(phs,dw).detach().cpu() * y_std + y_mean
+        output   = par(phs).detach().cpu() * y_std + y_mean
         #print(output.shape)
-        pred_sus = crop_data(output.numpy(), N_dif[0])
-        
+        pred_sus = crop_data(output.numpy(), N_dif[0])        
         
         mdic = {"susc" : pred_sus}
         filename = out_data + 'net-' + str(idx) + ".mat"
@@ -100,28 +99,11 @@ def test(directory):
         scipy.io.savemat(filename, mdic)
     toc()
         
-                                                     #  KD       BNCK
-                                                     
-#"17Jan_1148am_model/"+ "AnamKD_12_model.pth"           Y         Y
-
-#"16Jan_0612am_model/"+ "AnamAbal_12_model.pth"         N         Y
-
-#"28Jan_0251pm_model/"+ "AnamAbalbneck_8_model.pth"     N         N
-
-#"29Jan_0958am_model/"+ "AnamAbalbneck_14_model.pth"    Y         N
-
-
-
- 
-
-#"23Jan_0446pm_model/"+ "AnamKD_9_model.pth"     mini
-
-# 24Jan_0106am_model/"+ "AnamAbal_5_model.pth"   mini
            
 if __name__ == '__main__':         
         
     saveDir='./savedModels/'         
     # if want to test on a specific model
-    directory=saveDir+"17Jan_1148am_model/"+ "AnamKD_12_model.pth" 
+    directory=saveDir+"17Jan_1148am_model/"+ "EQSMnet_12_model.pth" 
     print('Loading the Model : ', directory)    
     test(directory)
