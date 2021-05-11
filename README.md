@@ -18,6 +18,8 @@ Please refer to the link https://github.com/SNU-LIST/QSMnet for data downloading
 
 **trn.py** is the run file to train the model, **tst.py** is the inference file, **student.py** has EQSMnet, **teacher.py** has QSMnet and **myDataset.py** is data iterator. 
 
+#### PyTorch (Library) Version Used was  : 1.5.0
+
 #### Any query, please raise an issue or contact :
 
 *Dr. Phaneendra  K. Yalavarthy* 
