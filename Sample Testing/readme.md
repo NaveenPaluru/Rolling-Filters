@@ -22,3 +22,22 @@ reconstruction.ipynb : run file
 [3] W. Jung, S. Bollmann, J. Lee. Overview of quantitative susceptibility mapping using deep learning: Current status, challenges and opportunities. NMR in Biomedicine. 2020 Mar; e4292. 
 
 </p>
+
+
+### COVID-19 Anomaly Segmentation
+
+``` md
+segment.mat : sample data file
+
+segment.pth : checkpoint file
+
+segmentation.ipynb : run file
+```
+
+##### Dataset and Pre-processing Credits
+
+<p align="justify" markdown="1">
+
+[1] Naveen Paluru, Aveen Dayal, Havard B. Jenssen, Tomas Sakinis, Linga R. Cenkeramaddi, Jaya Prakash, and Phaneendra K. Yalavarthy, "Anam-Net : Anamorphic Depth Embedding based Light-Weight CNN for Segmentation of Anomalies in COVID-19 Chest CT Images," IEEE Transactions on Neural Networks and Learning Systems (Fast Track: COVID-19 Focused Papers), 32(3), 932-946 (2021)
+
+</p>
