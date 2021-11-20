@@ -11,7 +11,7 @@ stats.mat : standardization
 reconstruction.ipynb : run file
 ```
 
-#### Dataset and Pre-processing Credits
+##### Dataset and Pre-processing Credits
 
 <p align="justify" markdown="1">
 
