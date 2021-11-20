@@ -11,7 +11,7 @@ stats.mat : standardization
 reconstruction.ipynb : run file
 ```
 
-Dataset and Pre-processing Credits
+#### Dataset and Pre-processing Credits
 
 <p align="justify" markdown="1">
 
@@ -24,7 +24,7 @@ Dataset and Pre-processing Credits
 </p>
 
 
-COVID-19 Anomaly Segmentation
+### COVID-19 Anomaly Segmentation
 
 ``` md
 segment.mat : sample data file
