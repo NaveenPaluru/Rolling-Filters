@@ -2,11 +2,8 @@
 ### Quantitative Susceptibility Mapping
 
 ``` md
-recon.mat : sample data file
 
-recon.pth : checkpoint file
-
-stats.mat : standardization
+recon.pth : The checkpoint file
 
 reconstruction.ipynb : run file
 ```
@@ -27,7 +24,6 @@ reconstruction.ipynb : run file
 ### COVID-19 Anomaly Segmentation
 
 ``` md
-segment.mat : sample data file
 
 segment.pth : checkpoint file
 
