@@ -27,7 +27,7 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
 ### Model Parameters Comparison (Log Scale)
 
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/3.png">
+  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/3.png" width="200" height="100">
 </p>
 
 ### References
