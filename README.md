@@ -25,6 +25,12 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
   <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/2.png">
 </p>
 
+### Sample Results : OCT Speckle Denoising
+
+<p align="center">
+  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/4.png">
+</p>
+
 ### Model Parameters Comparison (Log Scale)
 
 <p align="center">
