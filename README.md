@@ -2,7 +2,8 @@
 # Rolling Convolution Filters
 
 <p align="justify" markdown="1">
-<sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters based Lightweight Deep Learning Networks for Medical Image Analysis" (Under Review November, 2021)</sub>
+<sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters Based Lightweight
+Neural Networks For Medical Image Analysis" (Under Review at IEEE TNNLS, May, 2022)</sub>
 </p>
 
 ```md
