@@ -21,13 +21,13 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
 ### Sample Results : COVID-19 Segmentation
 
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/3.png">
+  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/2.png">
 </p>
 
 ### Model Parameters Comparison (Log Scale)
 
 <p align="center">
-  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/2.png">
+  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/3.png">
 </p>
 
 ### References
