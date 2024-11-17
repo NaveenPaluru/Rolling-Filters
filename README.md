@@ -53,4 +53,4 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
 
 *Naveen Paluru*
 
-*(PhD) CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
+*Ph.D. CDS, MIG, IISc Bangalore,  email : naveenp@iisc.ac.in*
