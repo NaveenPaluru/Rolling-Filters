@@ -3,7 +3,7 @@
 
 <p align="justify" markdown="1">
 <sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters Based Lightweight
-Neural Networks For Medical Image Analysis" (Under Review at IEEE TNNLS, May, 2022)</sub>
+Neural Networks For Medical Image Analysis" (under preparation for IEEE JBHI submission)</sub>
 </p>
 
 ```md
@@ -23,18 +23,6 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
 
 <p align="center">
   <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/2.png">
-</p>
-
-### Sample Results : OCT Speckle Denoising
-
-<p align="center">
-  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/4.png">
-</p>
-
-### Model Parameters Comparison (Log Scale)
-
-<p align="center">
-  <img src="https://github.com/NaveenPaluru/Rolling-Filters/blob/main/Display%20Images/3.png" width="600" height="500">
 </p>
 
 ### References
