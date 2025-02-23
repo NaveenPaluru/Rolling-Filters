@@ -27,9 +27,11 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
 
 ### References
 
-<p align="justify" markdown="2">
+<p align="justify" markdown="1">
 
 <sup> [1]  J. Yoon, E. Gong, I. Chatnuntawech, B. Bilgic, J. Lee, W. Jung, J. Ko, H. Jung, K. Setsompop, G. Zaharchuk, E.Y. Kim, J. Pauly, J. Lee. Quantitative susceptibility mapping using deep neural network: QSMnet. Neuroimage. 2018 Oct;179:199-206. </sub>
+
+</p>
 
 <sup> [2] W. Jung, J. Yoon, S. Ji, J. Choi, J. Kim, Y. Nam, E. Kim, J. Lee. Exploring linearity of deep neural network trained QSM: QSMnet+. Neuroimage. 2020 May; 116619.  </sub>
 
@@ -43,7 +45,7 @@ The Sample Testing folder has model definitions, sample testing data, and checkp
 
 <sup> [7] Y. Gao, X. Zhu, B. A. Moffat, R. Glarin, A. H. Wilman, G. B. Pike, S. Crozier, F. Liu, and H. Sun, “xqsm: quantitative susceptibility mapping with octave convolutional and noise-regularized neural networks,” NMR in Biomedicine, vol. 34, no. 3, p. e4461, 2021.  </sub>
 
-</p>
+
 
 #### Any query, please raise an issue or contact :
 
