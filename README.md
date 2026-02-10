@@ -2,8 +2,7 @@
 # Rolling Convolution Filters
 
 <p align="justify" markdown="1">
-<sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters Based Lightweight
-Neural Networks For Medical Image Analysis", Journal of Medical Imaging, 2026 (in press).</sub>
+<sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters for Lightweight Neural Networks in Medical Image Analysis", Journal of Medical Imaging, 2026 (in press).</sub>
 </p>
 
 ```md
