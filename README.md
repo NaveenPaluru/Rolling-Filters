@@ -3,7 +3,7 @@
 
 <p align="justify" markdown="1">
 <sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters Based Lightweight
-Neural Networks For Medical Image Analysis" (Under Review, "Journal of Medical Imaging", October 2025)</sub>
+Neural Networks For Medical Image Analysis", Journal of Medical Imaging, 2026 (in press).</sub>
 </p>
 
 ```md
