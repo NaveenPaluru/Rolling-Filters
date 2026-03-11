@@ -4,7 +4,8 @@
 <p align="justify" markdown="1">
 <sup> Naveen Paluru, Mehak Arora, and Phaneendra K. Yalavarthy, "Rolling Convolution Filters for Lightweight Neural Networks in Medical Image Analysis," Journal of Medical Imaging 13(2), 024501 (2026). [doi: 10.1117/1.JMI.13.2.024501].</sub>
 </p>
-[Manuscript](https://cds.iisc.ac.in/faculty/yalavarthy/Paluru_JMI_2026.pdf)
+  
+[Manuscript] (https://cds.iisc.ac.in/faculty/yalavarthy/Paluru_JMI_2026.pdf)
 
 
 ```md
